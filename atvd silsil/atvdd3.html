@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nascimento</h1>
+    <p><span id="resul"></span></p>
+    <p>Pessoa 1: <span id="Pessoa 1"></span></p>
+    <p>Idade 1: <span id="Idade1"></span></p>
+    <p>Pessoa 2: <span id="Pessoa 2"></span></p>
+    <p>Idade 2: <span id="Idade2"></span></p>
+    <script>
+        let name1 = prompt("Digite o nome da pessoa:");
+        let num1 = Number(prompt("Digite a data de nascimento da pessoa:"));
+        let name2 = prompt("Digite o nome dapessoa:");
+        let num2 = Number(prompt("Digite a data de nascimento:"));
+
+        if(num1 > num2){
+            resul = name1 + " Pessoa mais nova "
+        }else{
+            resul = name2 + " Pessoa mais nova "
+        }
+
+        document.getElementById("resul").innerHTML = resul;
+        document.getElementById("Pessoa 1").innerHTML = name1;
+        document.getElementById("Idade1").innerHTML = 2023 - num1 ;
+        document.getElementById("Pessoa 2").innerHTML = name2;
+        document.getElementById("Idade2").innerHTML = 2023 - num2;
+    </script>
+</body>
+</html>

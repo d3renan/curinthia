@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>O resultado da variação A: <span id="resultadoa"></span></p>
+    <p>O resultado da variação B: <span id="resultadob"></span></p>
+    <script>
+        let a = 5000;
+        let b = "Maria"
+        if(a > 1000 && b == "Maria"){
+            a = a + 3000;
+        }
+
+        document.getElementById("resultadoa").innerHTML = a;
+        document.getElementById("resultadob").innerHTML = b;
+
+    </script>
+</body>
+</html>

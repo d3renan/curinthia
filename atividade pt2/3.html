@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>empresa do rafinha</h1>
+    <p>Nome do funcionario: <span id="nome"></span></p>
+    <p>Meta para atingir: <span id="meta"></span></p>
+    <p>Meta atingida: <span id="atingido"></span></p>
+    <p>Resultado: <span id="resul"></span></p>
+
+    <script>
+        let name = prompt("Nome do Funcionario:");
+        let num1 = Number(prompt("Meta para atingir:"));
+        let num2 = Number(prompt("Meta atingida:"));
+        let msg;
+
+        if(num1 > num2){
+            msg = name + " Meta não atingida "
+        }else{
+            msg = name + " Meta atingida "
+        }
+
+        document.getElementById("nome").innerHTML = name;
+        document.getElementById("meta").innerHTML = num1;
+        document.getElementById("atingido").innerHTML = num2;
+        document.getElementById("resul").innerHTML = msg;
+
+    </script>
+</body>
+</html>

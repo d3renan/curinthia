@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obesidade</title>
+</head>
+<body>
+    <h1>Obesidade</h1>
+    <p><span id="resul"></span></p>
+    <script>
+        let name1 = prompt("Digite o nome da pessoa:");
+        let num1 = Number(prompt("Digite o peso:"));
+        let name2 = prompt("Digite o nome da pessoa:");
+        let num2 = Number(prompt("digite o peso da pessoa:"));
+        
+        if(num1 > num2){
+            resul = name1 + "Pode morrer mais cedo"
+        }else{
+            resul = name2 + "pode morrer mais cedo"
+        }
+
+        document.getElementById("resul").innerHTML = resul;
+        
+    </script>
+</body>
+</html>

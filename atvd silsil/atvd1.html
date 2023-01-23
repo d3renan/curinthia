@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Seuencias de numeros</h1>
+    <p>Maior: <span id="maior"></span></p>
+    <p>Menor: <span id="menor"></span></p>
+    <script>
+        let num1 = Number(prompt("Digite um numero"));
+        let num2 = Number(prompt("Digite um numero"));
+        let maior;
+        let menor;
+
+        if(num1 > num2){
+            maior = num1
+            menor = num2
+        }else{
+            maior = num2
+            menor = num1
+        }
+
+        document.getElementById("maior").innerHTML = maior;
+        document.getElementById("menor").innerHTML = menor;
+
+
+    </script>
+</body>
+</html>
